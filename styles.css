@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Outfit", sans-serif;
+    background-color: #0d192b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  main {
+    background-color: #14253d;
+  
+    max-width: 22rem;
+  
+    display: flex;
+    flex-direction: column;
+  
+    gap: 1.45rem;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 30px 35px 30px rgba(0, 0, 0, 0.2);
+  }
+  .images {
+    position: relative;
+  }
+  .images::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00fff7;
+    border-radius: 8px;
+    opacity: 0;
+    overflow: hidden;
+  }
+  .images:hover .nft-view-image {
+    opacity: 1;
+  }
+  .images:hover::before {
+    opacity: 0.5;
+  }
+  .nft-image {
+    width: 100%;
+    height: 100%;
+  
+    align-self: center;
+    border-radius: 8px;
+  }
+  .nft-image:hover {
+    cursor: pointer;
+  }
+  
+  .nft-view-image {
+    width: 36px;
+    height: 36px;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    opacity: 0;
+  }
+  .nft-name a {
+    font-size: 1.55rem;
+  }
+  .nft-name a:link,
+  .nft-name a:visited {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+  }
+  .nft-name a:hover,
+  .nft-name a:active {
+    cursor: pointer;
+    color: #00fff7;
+  }
+  .nft-description {
+    font-size: 1.125rem;
+    color: rgba(139, 172, 218, 0.808);
+    line-height: 1.5;
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(139, 172, 218, 0.39);
+    padding-bottom: 1rem;
+    align-items: center;
+    font-size: 0.75;
+    gap: 0.7rem;
+
+  }
+  .price,
+  .time {
+    font-size: 0.937rem;
+  
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .price-amount {
+    color: #00fff7;
+  }
+  .time-days {
+    color: rgba(139, 172, 218, 0.808);
+  }
+  .author {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+  
+    font-size: 0.937rem;
+    color: rgba(139, 172, 218, 0.808);
+  }
+  .author-image {
+    width: 15%;
+  
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .author-name a:link,
+  .author-name a:visited {
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+  }
+  .author-name a:hover,
+  .author-name a:active {
+    cursor: pointer;
+    color: #00fff7;
+  }
+  footer {
+    font-size: 0.6875rem;
+    text-align: center;
+  }
+  footer a {
+    color: hsl(228, 45%, 44%);
+  }
+ 
